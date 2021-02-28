@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
 import static org.junit.Assert.*;
-import static org.junit.jupiter.api.Assertions.fail;
 
 /**
  * Unit test for simple App.
@@ -35,8 +34,12 @@ public class AppTest
     {
         App.main(null);
         try {
+<<<<<<< HEAD
             //assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
         	assertEquals("TEST!" + System.getProperty("line.separator"), outContent.toString());
+=======
+            assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
+>>>>>>> parent of 6a25f59 (added changes to break the test)
         } catch (AssertionError e) {
             fail("\"message\" is not \"Hello World!\"");
         }
